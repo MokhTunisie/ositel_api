@@ -1,0 +1,8 @@
+framework:
+    serializer: { enable_annotations: true }
+api_platform:
+    mapping:
+        paths: ['%kernel.project_dir%/src/App/ApiBundle/Entity']
+    collection:
+        pagination:
+            items_per_page: 5

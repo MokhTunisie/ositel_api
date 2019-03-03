@@ -1,0 +1,7 @@
+api:
+    resource: "@ApiBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+imports:
+    resource: 'routes/*.yaml'

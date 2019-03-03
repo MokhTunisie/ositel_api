@@ -1,0 +1,20 @@
+
+sonata_admin:
+#  security:
+#    handler: sonata.admin.security.handler.role
+#
+#    role_admin: ROLE_ADMIN
+#    role_super_admin: ROLE_SUPER_ADMIN
+
+
+  title: "Ositel Admin"
+  options:
+  assets:
+    # stylesheet paths to add to the page in addition to the list above
+    extra_stylesheets: []
+
+sonata_block:
+  blocks:
+    # enable the SonataAdminBundle block
+    sonata.admin.block.admin_list:
+      contexts: [admin]

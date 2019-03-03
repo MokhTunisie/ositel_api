@@ -1,0 +1,22 @@
+# app/config/packages/sonata_admin.yaml
+services:
+    admin.transaction:
+      class: App\ApiBundle\Admin\TransactionAdmin
+      arguments: [~, App\ApiBundle\Entity\Transaction, ~]
+      tags:
+        - { name: sonata.admin, manager_type: orm, group: Ositel admin, label: Transactions }
+      public: true
+
+    admin.tag:
+      class: App\ApiBundle\Admin\TagAdmin
+      arguments: [~, App\ApiBundle\Entity\Tag, ~]
+      tags:
+        - { name: sonata.admin, manager_type: orm, group: ~, label: Tags, show_in_dashboard: false }
+      public: true
+
+    admin.category:
+      class: App\ApiBundle\Admin\CategoryAdmin
+      arguments: [~, App\ApiBundle\Entity\Category, ~]
+      tags:
+        - { name: sonata.admin, manager_type: orm, group: ~, label: Categorie, show_in_dashboard: false }
+      public: true
